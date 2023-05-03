@@ -8,7 +8,7 @@ pipeline
         {
      steps 
      {
-      script{
+      script {
           sample.info("Starting","DevOps.com")
       }
        sh "echo installing JSLINT"
