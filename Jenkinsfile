@@ -2,12 +2,9 @@
 pipeline 
 {
  agent any
- stages 
- {
-    stage ('lint checks') 
-        {
-     steps 
-     {
+ stages {
+    stage ('lint checks') {
+     steps {
       script {
           sample.info("Starting","DevOps.com")
       }
@@ -24,7 +21,6 @@ pipeline
       {
         sh "npm install"
       }
-
     }
  }
 }
