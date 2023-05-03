@@ -1,12 +1,16 @@
+@Library('robot-shared-library')
 pipeline 
 {
  agent any
  stages 
  {
     stage ('lint checks') 
-    {
+        {
      steps 
      {
+      script{
+          sample.info("Starting","DevOps.com")
+      }
        sh "echo installing JSLINT"
        sh "npm install jslint"
        sh "ls -ltr node_modules/jslint/bin"
