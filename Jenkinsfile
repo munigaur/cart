@@ -1,6 +1,5 @@
 @Library('robot-shared-library')
-pipeline 
-{
+pipeline {
  agent any
  stages {
     stage ('lint checks') {
