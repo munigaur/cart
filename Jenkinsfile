@@ -1,9 +1,9 @@
 @Library('robot-shared-library')
 pipeline {
- agent any
- stages {
-    stage ('lint checks') {
-     steps {
+   agent any
+   stages {
+      stage ('lint checks') {
+        steps {
       script {
           sample.info("Starting","DevOps.com")
       }
